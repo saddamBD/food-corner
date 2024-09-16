@@ -11,5 +11,70 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <!-- Navbar start -->
+      <nav class="flex items-center justify-between p-5 bg-gray-800 text-white">
+        <div class="flex items-center">
+          <img src="Resources/logo.png" alt="Logo" class="w-10 h-10" />
+          <span class="ml-3 text-lg font-bold">Food Corner</span>
+        </div>
+        <div class="hidden sm:flex space-x-4">
+          <button class="btn bg-white text-gray-800 hover:bg-blue-100">
+            Potato
+          </button>
+          <button class="btn bg-white text-gray-800 hover:bg-blue-100">
+            Soup
+          </button>
+          <button class="btn bg-white text-gray-800 hover:bg-blue-100">
+            Chicken
+          </button>
+          <button class="btn bg-white text-gray-800 hover:bg-blue-100">
+            Beef
+          </button>
+        </div>
+        <div class="sm:hidden">
+          <button
+            id="hamburger-btn"
+            class="text-gray-700 focus:outline-none bg-white"
+          >
+            <!-- Hamburger icon using an SVG -->
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-8 w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </button>
+        </div>
+        <!-- Dropdown Menu -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <ul class="flex flex-col space-y-2 mt-4">
+            <li><button class="btn w-full">Potato</button></li>
+            <li><button class="btn w-full">Soup</button></li>
+            <li><button class="btn w-full">Chicken</button></li>
+            <li><button class="btn w-full">Beef</button></li>
+          </ul>
+        </div>
+        <!-- Dropdown Menu  -->
+        <div id="mobile-menu" class="hidden md:hidden">
+          <ul class="flex flex-col space-y-2 mt-4">
+            <li><button class="btn w-full">Potato</button></li>
+            <li><button class="btn w-full">Soup</button></li>
+            <li><button class="btn w-full">Chicken</button></li>
+            <li><button class="btn w-full">Beef</button></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Navbar end-->
+    </header>
+  </body>
 </html>
