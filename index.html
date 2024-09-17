@@ -15,9 +15,11 @@
     <header>
       <!-- Navbar start -->
       <nav class="flex items-center justify-between p-5 bg-gray-800 text-white">
-        <div class="flex items-center">
-          <img src="Resources/logo.png" alt="Logo" class="w-10 h-10" />
-          <span class="ml-3 text-lg font-bold">Food Corner</span>
+        <div id="homeButton" class="flex items-center">
+          <button class="flex items-center">
+            <img src="Resources/logo.png" alt="Logo" class="w-10 h-10" />
+            <span class="ml-3 text-lg font-bold">Food Corner</span>
+          </button>
         </div>
         <div class="hidden sm:flex space-x-4">
           <button class="btn">Potato</button>
@@ -192,176 +194,56 @@
 
       <!-- Featured section end -->
 
-      <!-- FAQ Section using tailwind-->
-      <section class="p-8">
-        <h2 class="text-3xl font-bold text-center mb-8">
-          Frequently Asked Questions
-        </h2>
-
-        <!-- FAQ Item 1 -->
-        <div class="mb-4">
-          <button
-            class="w-full text-left flex justify-between items-center py-3 px-5 bg-blue-100 border border-gray-300 rounded-lg"
-          >
-            <span class="text-xl font-medium"
-              >What are the delivery hours?</span
-            >
-            <svg
-              class="w-6 h-6 transition-transform duration-200 transform rotate-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="faq-icon-1"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <div
-            class="collapse-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
-          >
-            <p class="py-2 text-white-600">
-              We deliver from 9 AM to 11 PM daily. You can place your order
-              anytime, but delivery will occur within these hours.
-            </p>
+      <!-- FAQ section start -->
+      <section class="my-20">
+        <h1 class="text-center text-3xl my-20">FAQ Section</h1>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <div class="collapse-title text-xl font-medium">
+            What are the delivery hours?
+          </div>
+          <div class="collapse-content">
+            <p>1:00 AM - 11:00 PM</p>
           </div>
         </div>
-
-        <!-- FAQ Item 2 -->
-        <div class="mb-4">
-          <button
-            class="w-full text-left flex justify-between items-center py-3 px-5 bg-blue-100 border border-gray-300 rounded-lg"
-          >
-            <span class="text-xl font-medium">How do I track my order?</span>
-            <svg
-              class="w-6 h-6 transition-transform duration-200 transform rotate-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="faq-icon-2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <div
-            class="collapse-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
-          >
-            <p class="py-2 text-gray-600">
-              Once your order is placed, you'll receive a tracking link via
-              email or SMS, allowing you to follow your delivery in real time.
-            </p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            How do I track my order?
+          </div>
+          <div class="collapse-content">
+            <p>Online tracking is available via Dashboard</p>
           </div>
         </div>
-
-        <!-- FAQ Item 3 -->
-        <div class="mb-4">
-          <button
-            class="w-full text-left flex justify-between items-center py-3 px-5 bg-blue-100 border border-gray-300 rounded-lg"
-          >
-            <span class="text-xl font-medium"
-              >Do you offer vegan or gluten-free options?</span
-            >
-            <svg
-              class="w-6 h-6 transition-transform duration-200 transform rotate-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="faq-icon-3"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <div
-            class="collapse-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
-          >
-            <p class="py-2 text-gray-600">
-              Yes, we offer a variety of vegan and gluten-free options. You can
-              filter the menu by these dietary preferences.
-            </p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Do you offer vegan or gluten-free options?
+          </div>
+          <div class="collapse-content">
+            <p>Yes we do</p>
           </div>
         </div>
-
-        <!-- FAQ Item 4 -->
-        <div class="mb-4">
-          <button
-            class="w-full text-left flex justify-between items-center py-3 px-5 bg-blue-100 border border-gray-300 rounded-lg"
-          >
-            <span class="text-xl font-medium"
-              >What payment methods are accepted?</span
-            >
-            <svg
-              class="w-6 h-6 transition-transform duration-200 transform rotate-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="faq-icon-4"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <div
-            class="collapse-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
-          >
-            <p class="py-2 text-gray-600">
-              We accept all major credit cards, PayPal, and cash on delivery.
-              Secure payment options are our priority.
-            </p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            What payment methods are accepted?
+          </div>
+          <div class="collapse-content">
+            <p>Mobile Banking, Visa, MasterCard</p>
           </div>
         </div>
-
-        <!-- FAQ Item 5 -->
-        <div class="mb-4">
-          <button
-            class="w-full text-left flex justify-between items-center py-3 px-5 bg-blue-100 border border-gray-300 rounded-lg"
-          >
-            <span class="text-xl font-medium"
-              >Can I modify or cancel my order after placing it?</span
-            >
-            <svg
-              class="w-6 h-6 transition-transform duration-200 transform rotate-0"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              id="faq-icon-5"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="2"
-                d="M19 9l-7 7-7-7"
-              />
-            </svg>
-          </button>
-          <div
-            class="collapse-content max-h-0 overflow-hidden transition-max-height duration-500 ease-in-out"
-          >
-            <p class="py-2 text-gray-600">
-              You can modify or cancel your order within 30 minutes of placing
-              it. After that, our team will start preparing your meal, and
-              changes may not be possible.
-            </p>
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-xl font-medium">
+            Can I modify or cancel my order after placing it?
+          </div>
+          <div class="collapse-content">
+            <p>Yes you can</p>
           </div>
         </div>
       </section>
+      <!-- FAQ section end -->
     </main>
 
     <script src="script.js"></script>

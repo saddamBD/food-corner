@@ -1,6 +1,7 @@
 const mealsContainer = document.getElementById("meals-container");
 const hamburgerBtn = document.getElementById("hamburger-btn");
 const mobileMenu = document.getElementById("mobile-menu");
+const homeButton = document.getElementById("homeButton");
 
 // Toggle mobile menu visibility
 hamburgerBtn.addEventListener("click", () => {
@@ -65,14 +66,10 @@ document.querySelectorAll(".btn.btn-circle").forEach((navButton) => {
     // Re-fetch meals for the current category when carousel navigates
   });
 });
-document.querySelectorAll("button").forEach((button, index) => {
-  button.addEventListener("click", () => {
-    const content = button.nextElementSibling;
-    const icon = button.querySelector("svg");
 
-    content.classList.toggle("max-h-0");
-    content.classList.toggle("max-h-screen");
+//home button function
 
-    icon.classList.toggle("rotate-180");
-  });
+homeButton.addEventListener("click", () => {
+  fetchMeals("Potato");
+  console.log("clicked");
 });
