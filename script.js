@@ -62,7 +62,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.querySelectorAll(".btn.btn-circle").forEach((navButton) => {
   navButton.addEventListener("click", () => {
-    fetchMeals(currentCategory);
+    fetchMeals("Potato");
     // Re-fetch meals for the current category when carousel navigates
   });
 });
